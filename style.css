@@ -693,10 +693,7 @@ main h4 {
         width: 100%;
     }
 
-    .Cards-section-five:hover {
-        transform: translateY(-31px);
-        width: 100%;
-    }
+
 
     .Cards-section-five-content {
         margin-bottom: 50%;
@@ -744,10 +741,6 @@ main h4 {
         width: 50%;
     }
 
-    .Cards-section-five:hover {
-        transform: translateY(-31px);
-        width: 100%;
-    }
 
     .Cards-section-five-content {
         margin-bottom: 25%;
