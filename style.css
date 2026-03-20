@@ -503,7 +503,15 @@ main h4 {
     .Iphone-Photo-desktop {
         display: none;
     }
+    .Cards-section-five {
+        width: 100% !important;   
+        min-height: auto !important; 
+    }
 
+    .Cards-section-five:hover {
+        transform: translateY(-20px) scale(1.05)
+        width: 100% !important; 
+    }
 
     .Cards-section-five {
         width: 100%;
@@ -876,13 +884,5 @@ main h4 {
     .Photo-card-section-five {
         width: 80%;
     }
-    .Cards-section-five {
-        width: 100% !important;   
-        min-height: auto !important; 
-    }
-
-    .Cards-section-five:hover {
-        transform: translateY(-20px) scale(1.05)
-        width: 100% !important; 
-    }
+    
 }
