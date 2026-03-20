@@ -483,11 +483,31 @@ main h4 {
             transform: translateY(0);
         }
     }
-
+  
+ 
     .Texts-Div {
         position: absolute;
         background-color: #f3f3f4;
         z-index: 5;
+    }
+    .Iphone-Photo-mobile {
+        display: block;
+        width: 70%;
+        min-height: 65vh;
+    }
+
+    .Iphone-Photo-desktop {
+        display: none;
+    }
+
+
+    .Cards-section-five {
+        width: 100%;
+    }
+
+    .Cards-section-five:hover {
+        transform: translateY(-20px) scale(1.05);
+        width: 100%;
     }
 }
 
