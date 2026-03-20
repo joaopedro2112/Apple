@@ -8,7 +8,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-
 :root {
     --Background-white-mode-white: #F5F5F7;
     --Background-white-two-mode-white: #ededee;
@@ -18,8 +17,6 @@
     --Text-Grey: grey;
     --Gray-two: #f0f0f0;
 }
-
-
 
 body {
     background-color: var(--Background-white-mode-white);
@@ -39,14 +36,11 @@ nav {
     align-items: center;
     padding: 20px;
     justify-content: space-around;
-
 }
 
 .Links {
     display: flex;
     gap: 50px;
-
-
 }
 
 .Links h4 {
@@ -56,7 +50,6 @@ nav {
     font-size: 13px;
     transition: all 0.5s ease-in-out;
 }
-
 
 .Logo,
 .Icon-Menu {
@@ -73,14 +66,12 @@ nav {
     border-bottom: 1px solid var(--Text-black-mode-white);
 }
 
-
 .Texts-Div {
     display: flex;
     position: absolute;
     background-color: var(--Background-white-mode-white);
     width: 100%;
     height: 85vh;
-
     top: 0;
     margin-top: 5%;
     left: 0;
@@ -96,7 +87,6 @@ nav {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -126,7 +116,6 @@ nav {
     width: 30%;
     text-align: center;
 }
-
 
 .Iphone-Photo-desktop,
 .Iphone-Photo-mobile {
@@ -181,14 +170,12 @@ main h4 {
 
 .Photos {
     display: flex;
-
     overflow-x: hidden;
     gap: 30px;
     width: 100%;
     overflow-y: hidden;
     height: 600px;
     align-items: center;
-
 }
 
 .Photo-one-section-two,
@@ -196,7 +183,6 @@ main h4 {
 .Photo-three-section-two,
 .Photo-for-section-two {
     flex-shrink: 0;
-
     border-radius: 30px;
 }
 
@@ -205,7 +191,6 @@ main h4 {
     display: flex;
     gap: 10px;
     flex-direction: column;
-
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -227,8 +212,6 @@ main h4 {
     -webkit-text-fill-color: transparent;
     font-size: 65px;
 }
-
-
 
 .Main-text-two-section-three {
     font-size: 21px;
@@ -252,7 +235,6 @@ main h4 {
     background-color: var(--Gray-two);
     border-radius: 30px;
     margin-top: 2rem;
-
 }
 
 .Circle-one,
@@ -261,7 +243,6 @@ main h4 {
 .Circle-for {
     width: 0.7rem;
     height: 2vh;
-
     background-color: transparent;
     border: 1px solid var(--Text-black-mode-white);
     border-radius: 50%;
@@ -332,9 +313,6 @@ main h4 {
     width: 60%;
     padding: 0.9rem;
     border-radius: 10px;
-
-
-
 }
 
 .Texts_section-for p:hover {
@@ -350,8 +328,6 @@ main h4 {
 .Photo-card2,
 .Photo-card3,
 .Photo-card4 {
-
-
     transition: 0.5s ease-in-out;
 }
 
@@ -360,9 +336,6 @@ main h4 {
 .Photo-card3:hover,
 .Photo-card4:hover {
     transform: scale(1.1) translateY(-3px);
-
-
-
 }
 
 .Main-section-for h1 {
@@ -389,7 +362,6 @@ main h4 {
 .Main-section-five {
     display: flex;
     align-items: center;
-
     justify-content: space-around;
     gap: 30px;
     flex-wrap: wrap;
@@ -397,11 +369,10 @@ main h4 {
 }
 
 .Cards-section-five {
-    width: 37%;
+    width: 35%;
     min-height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 20px;
     cursor: pointer;
     border-radius: 20px;
@@ -409,12 +380,11 @@ main h4 {
 }
 
 .Cards-section-five:hover {
-    transform: translateY(-5px);
+    width: 37%;
 }
 
 .Photo-card-section-five {
     width: 100%;
-
     border-radius: 30px;
     mix-blend-mode: multiply;
     border: 1px solid #00000023;
@@ -425,10 +395,8 @@ main h4 {
     position: absolute;
     display: flex;
     flex-direction: column;
-
     gap: 15px;
     margin-bottom: 25%;
-
     padding: 30px;
 }
 
@@ -440,8 +408,6 @@ main h4 {
     .Icon-Menu {
         display: flex;
     }
-
-
 
     .Links {
         display: none;
@@ -470,8 +436,6 @@ main h4 {
         padding: 2rem;
     }
 
-
-
     @keyframes Link-animation-mobile {
         from {
             opacity: 0;
@@ -484,55 +448,14 @@ main h4 {
         }
     }
 
-
     .Texts-Div {
         position: absolute;
         background-color: #f3f3f4;
         z-index: 5;
     }
-
-    .Iphone-Photo-mobile {
-        display: block;
-        width: 70%;
-        min-height: 65vh;
-    }
-
-    .Iphone-Photo-desktop {
-        display: none;
-    }
-
-
-    .Cards-section-five {
-        width: 100%;
-    }
-
-
-    .Iphone-Photo-mobile {
-        display: block;
-    }
-
-    .Iphone-Photo-desktop {
-        display: none;
-    }
-
-    .Cards-section-five {
-        width: 100%;
-    }
-    .Photo-card-section-five {
-        width: 100%;
-    }
-    .Cards-section-five:hover {
-        transform: translateY(-20px) scale(1.05);
-        width: 100%;
-    }
-
-    .Cards-section-five:hover {
-        transform: translateY(-20px) scale(1.05);
-        width: 100%;
-    }
 }
 
-@media (max-width:400px) {
+@media (max-width:426px) {
     .Iphone-Photo-mobile {
         display: block;
         width: 70%;
@@ -544,12 +467,10 @@ main h4 {
         gap: 50px;
         position: relative;
         z-index: 2;
-
     }
 
     .Text_section-for {
         display: none;
-
     }
 
     .Text_section-for-mobile {
@@ -575,9 +496,7 @@ main h4 {
     }
 
     .Main-section-two {
-
         flex-direction: column;
-
     }
 
     .Circle-one,
@@ -603,7 +522,6 @@ main h4 {
 
     .Iphone-Photo-desktop {
         display: none;
-
     }
 
     .Main-section-two {
@@ -623,7 +541,6 @@ main h4 {
     .Menu-div.active .Texts-Div {
         transform: translateY(0);
         opacity: 1;
-
         visibility: visible;
     }
 
@@ -636,12 +553,10 @@ main h4 {
         display: flex;
         flex-direction: column;
         gap: 10px;
-
     }
 
     .Texts-Div {
         flex-direction: column;
-
     }
 
     .Main-Title {
@@ -652,9 +567,6 @@ main h4 {
     .Main-section-one {
         margin-top: 10%;
     }
-
-
-
 
     .Photo-main-section-three {
         width: 70%;
@@ -681,136 +593,7 @@ main h4 {
 
     .Photos {
         width: 100%;
-
         height: 220px;
-    }
-
-    .Main-section-five {
-        flex-direction: column;
-    }
-
-    .Cards-section-five {
-        width: 100%;
-    }
-
-
-
-    .Cards-section-five-content {
-        margin-bottom: 50%;
-
-    }
-
-    .Main-text-completion-section-for {
-        text-align: center;
-        margin-left: 0;
-    }
-
-    .Price-section-five {
-        width: 50%;
-        padding: 5px;
-        border-radius: 20px;
-        color: black !important;
-        background-color: #c3ffc7;
-        text-align: center;
-
-    }
-
-}
-
-@media (min-width: 427px) and (max-width: 767px) {
-    .Main-Title {
-        font-size: 2rem;
-    }
-
-    .Photos {
-        width: 100%;
-
-        height: 380px;
-    }
-
-    .Main-text-completion-section-for {
-        padding: 3%;
-
-    }
-
-    .Main-section-five {
-        flex-direction: column;
-    }
-
-    .Cards-section-five {
-        width: 50%;
-    }
-
-
-    .Cards-section-five-content {
-        margin-bottom: 25%;
-
-    }
-
-    .Photo-card-section-five {
-        width: 80%;
-    }
-
-    .Main-text-completion-section-for {
-        text-align: center;
-        margin-left: 0;
-    }
-
-    .Price-section-five {
-        width: 50%;
-        padding: 5px;
-        border-radius: 20px;
-        color: black !important;
-        background-color: #c3ffc7;
-        text-align: center;
-
-    }
-
-    .Main-section-two {
-        padding: 1px;
-        max-height: 130vh;
-    }
-
-
-    .Texts-Div {
-        margin-top: -6%;
-    }
-
-    .Iphone-Photo-desktop {
-        display: none;
-    }
-
-    .Iphone-Photo-mobile {
-        display: block;
-    }
-
-    nav section {
-        justify-content: space-between;
-
-    }
-}
-
-@media screen and (min-width: 664px) and (max-width: 1024px) {
-    .Main-Title {
-        font-size: 2rem;
-        width: 50%;
-    }
-
-    .Photos {
-        height: 460px;
-    }
-
-    .Main-title-section-three {
-        width: 80%;
-    }
-
-    .Text_section-for {
-        display: none;
-
-    }
-
-    .Text_section-for-mobile {
-        display: flex;
     }
 
     .Main-section-five {
@@ -828,7 +611,6 @@ main h4 {
 
     .Cards-section-five-content {
         margin-bottom: 50%;
-
     }
 
     .Main-text-completion-section-for {
@@ -843,7 +625,127 @@ main h4 {
         color: black !important;
         background-color: #c3ffc7;
         text-align: center;
+    }
+}
 
+@media screen and (min-width: 660px) and (max-width: 768px) {
+    .Main-Title {
+        font-size: 2rem;
+    }
+
+    .Photos {
+        width: 100%;
+        height: 380px;
+    }
+
+    .Main-text-completion-section-for {
+        padding: 3%;
+    }
+
+    .Main-section-five {
+        flex-direction: column;
+    }
+
+    .Cards-section-five {
+        width: 50%;
+    }
+
+    .Cards-section-five:hover {
+        transform: translateY(-31px);
+        width: 100%;
+    }
+
+    .Cards-section-five-content {
+        margin-bottom: 25%;
+    }
+
+    .Main-text-completion-section-for {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .Price-section-five {
+        width: 45%;
+        padding: 5px;
+        border-radius: 20px;
+        color: black !important;
+        background-color: #c3ffc7;
+        text-align: center;
+    }
+
+    .Main-section-two {
+        padding: 1px;
+        max-height: 130vh;
+    }
+
+    .Texts-Div {
+        margin-top: -6%;
+    }
+
+    .Iphone-Photo-desktop {
+        display: block;
+    }
+
+    .Iphone-Photo-mobile {
+        display: none;
+    }
+
+    nav section {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:427px) and (max-width:1023px) {
+    .Main-Title {
+        font-size: 2rem;
+        width: 50%;
+    }
+
+    .Photos {
+        height: 460px;
+    }
+
+    .Main-title-section-three {
+        width: 80%;
+    }
+
+    .Text_section-for {
+        display: none;
+    }
+
+    .Text_section-for-mobile {
+        display: flex;
+    }
+
+    .Main-section-five {
+        flex-direction: column;
+    }
+
+    .Cards-section-five {
+        width: 70%;
+    }
+
+    .Cards-section-five:hover {
+        width: 71%;
+    
+    }
+
+    .Cards-section-five-content {
+        margin-bottom: 50%;
+    }
+
+    .Main-text-completion-section-for {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .Price-section-five {
+        width: 45%;
+        padding: 5px;
+        border-radius: 20px;
+        color: black !important;
+        background-color: #c3ffc7;
+        text-align: center;
     }
 
     .void-mobile {
@@ -856,14 +758,4 @@ main h4 {
         margin-left: -5%;
         margin-top: 20%;
     }
-}
-@media screen and (max-width: 412px) {
-    .Iphone-Photo-desktop {
-        display: none;
-    }
-
-    .Iphone-Photo-mobile {
-        display: block;
-    }
-    
 }
