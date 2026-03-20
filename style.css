@@ -403,7 +403,20 @@ main h4 {
 .void-mobile {
     display: none;
 }
-
+.Main-section-six {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.Main-title-section-six{
+    background: linear-gradient(90deg, #ff7ad9, #843bcc, #8a68d4);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 @media (max-width:768px) {
     .Icon-Menu {
         display: flex;
