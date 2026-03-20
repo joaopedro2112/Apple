@@ -397,7 +397,7 @@ main h4 {
 }
 
 .Cards-section-five {
-    width: 35%;
+    width: 37%;
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -409,7 +409,7 @@ main h4 {
 }
 
 .Cards-section-five:hover {
-    width: 37%;
+    transform: translateY(-5px);
 }
 
 .Photo-card-section-five {
@@ -437,9 +437,6 @@ main h4 {
 }
 
 @media (max-width:768px) {
-    .Photo-card-section-five {
-        width: 100%;
-    }
     .Icon-Menu {
         display: flex;
     }
@@ -503,15 +500,7 @@ main h4 {
     .Iphone-Photo-desktop {
         display: none;
     }
-    .Cards-section-five {
-        width: 100% !important;   
-        min-height: auto !important; 
-    }
 
-    .Cards-section-five:hover {
-        transform: translateY(-20px) scale(1.05)
-        width: 100% !important; 
-    }
 
     .Cards-section-five {
         width: 100%;
@@ -529,7 +518,9 @@ main h4 {
     .Cards-section-five {
         width: 100%;
     }
-
+    .Photo-card-section-five {
+        width: 100%;
+    }
     .Cards-section-five:hover {
         transform: translateY(-20px) scale(1.05);
         width: 100%;
@@ -880,9 +871,6 @@ main h4 {
 
     .Iphone-Photo-mobile {
         display: block;
-    }
-    .Photo-card-section-five {
-        width: 80%;
     }
     
 }
