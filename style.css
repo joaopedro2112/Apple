@@ -437,6 +437,9 @@ main h4 {
 }
 
 @media (max-width:768px) {
+    .Photo-card-section-five {
+        width: 100%;
+    }
     .Icon-Menu {
         display: flex;
     }
