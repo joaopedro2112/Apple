@@ -80,7 +80,7 @@ nav {
     background-color: var(--Background-white-mode-white);
     width: 100%;
     height: 85vh;
-    
+
     top: 0;
     margin-top: 5%;
     left: 0;
@@ -483,13 +483,14 @@ main h4 {
             transform: translateY(0);
         }
     }
-  
- 
+
+
     .Texts-Div {
         position: absolute;
         background-color: #f3f3f4;
         z-index: 5;
     }
+
     .Iphone-Photo-mobile {
         display: block;
         width: 70%;
@@ -502,6 +503,24 @@ main h4 {
 
 
     .Cards-section-five {
+        width: 100%;
+    }
+
+
+    .Iphone-Photo-mobile {
+        display: block;
+    }
+
+    .Iphone-Photo-desktop {
+        display: none;
+    }
+
+    .Cards-section-five {
+        width: 100%;
+    }
+
+    .Cards-section-five:hover {
+        transform: translateY(-20px) scale(1.05);
         width: 100%;
     }
 
@@ -732,9 +751,11 @@ main h4 {
         margin-bottom: 25%;
 
     }
+
     .Photo-card-section-five {
         width: 70%;
     }
+
     .Main-text-completion-section-for {
         text-align: center;
         margin-left: 0;
@@ -755,7 +776,7 @@ main h4 {
         max-height: 130vh;
     }
 
-    
+
     .Texts-Div {
         margin-top: -6%;
     }
@@ -773,6 +794,7 @@ main h4 {
 
     }
 }
+
 @media screen and (min-width: 664px) and (max-width: 1024px) {
     .Main-Title {
         font-size: 2rem;
@@ -834,6 +856,7 @@ main h4 {
         width: 100%;
         background-color: red;
     }
+
     .Texts-Div {
         margin-left: -5%;
         margin-top: 20%;
