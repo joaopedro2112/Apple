@@ -28,6 +28,8 @@ header section {
     height: 10vh;
     background-color: var(--Background-white-mode-white);
     position: relative;
+
+
     z-index: 1;
 }
 
@@ -47,6 +49,7 @@ nav {
     color: var(--Text-black-mode-white);
     position: relative;
     z-index: 2;
+    width: fit-content;
     font-size: 13px;
     transition: all 0.5s ease-in-out;
 }
@@ -76,6 +79,8 @@ nav {
     margin-top: 5%;
     left: 0;
     z-index: 1;
+
+
     gap: 4rem;
     opacity: 0;
     visibility: hidden;
@@ -92,6 +97,10 @@ nav {
     justify-content: flex-start;
     padding: 4rem;
     gap: 2rem;
+}
+
+header:has(.Text-One:hover)~main section {
+    filter: blur(10px);
 }
 
 .Main-section-one {
@@ -368,12 +377,14 @@ main h4 {
     margin-top: 5%;
 }
 
-.Cards-section-five {
+.Cards-section-five,
+.Cards-section-five-neo {
     width: 35%;
     min-height: 80vh;
     display: flex;
     align-items: center;
     padding: 20px;
+    justify-content: center;
     cursor: pointer;
     border-radius: 20px;
     transition: 0.5s ease-in-out;
@@ -383,7 +394,8 @@ main h4 {
     width: 37%;
 }
 
-.Photo-card-section-five {
+.Photo-card-section-five,
+.Photo-card-section-five-neo {
     width: 100%;
     border-radius: 30px;
     mix-blend-mode: multiply;
@@ -391,7 +403,8 @@ main h4 {
     box-shadow: 4px 4px 15px #00000055;
 }
 
-.Cards-section-five-content {
+.Cards-section-five-content,
+.Cards-section-five-content-neo {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -403,6 +416,7 @@ main h4 {
 .void-mobile {
     display: none;
 }
+
 .Main-section-six {
     margin-top: 30px;
     display: flex;
@@ -410,16 +424,143 @@ main h4 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 20px;
+    gap: 10px;
 }
-.Main-title-section-six{
+
+.Main-section-six h1 {
     background: linear-gradient(90deg, #ff7ad9, #843bcc, #8a68d4);
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
 }
+
+.Photo-section-six {
+    width: 90%;
+    display: block;
+    height: auto;
+    border-radius: 30px;
+}
+
+.Photo-mobile-section-six {
+    width: 90%;
+    display: none;
+    height: auto;
+    border-radius: 30px;
+}
+
+.Main-section-six h4 {
+    width: 50%;
+    color: #656565;
+}
+
+.Main-section-six h4 span {
+    color: var(--Text-black-mode-white);
+}
+
+.Main-section-seven {
+    display: flex;
+    align-items: center;
+    margin: 30vh auto;
+    gap: 20px;
+    border-radius: 30px;
+    background-color: black;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main-section-seven h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.Photo-section-seven {
+    display: block;
+    width: 95%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.Photo-mobile-section-seven {
+    width: 95%;
+    height: auto;
+    border-radius: 30px;
+    display: none;
+
+}
+
+.Main-section-eight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    background-color: var(--Background-white-mode-white);
+}
+
+.Main-section-eight img {
+    width: 65%;
+    border-radius: 30px;
+    height: auto;
+}
+
+.Main-section-eight h1 {
+    font-size: 60px;
+    background: linear-gradient(90deg, #ff7ad9, #843bcc, #8a68d4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Main-section-eight h4 {
+    width: 50%;
+    color: #656565;
+    overflow-wrap: break-word;
+    font-size: 18px;
+}
+
+.Main-section-eight h4 span {
+    color: var(--Text-black-mode-white);
+}
+
 @media (max-width:768px) {
     .Icon-Menu {
         display: flex;
+    }
+
+    header:has(.Icon-Menu:hover)~main section {
+        filter: blur(10px);
+    }
+
+    .Main-section-seven h1,
+    .Main-section-eight h1 {
+        font-size: 26px;
+    }
+
+    .Cards-section-five-content,
+    .Cards-section-five-content-neo {
+        margin-bottom: 0;
+        margin-top: 7vh;
+    }
+
+    .Photo-card-section-five,
+    .Photo-card-section-five-neo {
+        width: 280px;
+
+    }
+
+    .Main-section-eight img {
+        width: 100%;
+    }
+
+    .Main-section-eight h4,
+    .Main-section-six h4 {
+        width: 90%;
+        font-size: 15px;
     }
 
     .Links {
@@ -466,7 +607,7 @@ main h4 {
         background-color: #f3f3f4;
         z-index: 5;
     }
-    
+
 }
 
 @media (max-width:426px) {
@@ -474,6 +615,14 @@ main h4 {
         display: block;
         width: 70%;
         min-height: 65vh;
+    }
+
+    .Photo-card-section-five-neo {
+        display: none;
+    }
+
+    .Cards-section-five-content-neo {
+        display: none;
     }
 
     .Photos-section-for {
@@ -501,6 +650,10 @@ main h4 {
         border-radius: 20px;
     }
 
+    .Cards-section-five-neo {
+        display: none;
+    }
+
     .Main-section-for {
         position: relative;
     }
@@ -511,6 +664,17 @@ main h4 {
 
     .Main-section-two {
         flex-direction: column;
+    }
+
+    .Photo-section-six,
+    .Photo-section-seven {
+        display: none;
+    }
+
+    .Photo-mobile-section-six,
+    .Photo-mobile-section-seven {
+        display: inline-block;
+        width: 100%;
     }
 
     .Circle-one,
@@ -646,38 +810,45 @@ main h4 {
     .Main-Title {
         font-size: 2rem;
     }
-    .Cards-section-five {
-        
+
+    .Cards-section-five,
+    .Cards-section-five-neo {
+
         min-height: auto;
         height: auto;
     }
+
     .Photos {
         width: 100%;
         height: 380px;
     }
+
     .Main-section-one {
         min-height: 40vh;
         margin-top: -12%;
     }
-    
+
     .Main-text-completion-section-for {
         padding: 3%;
     }
 
     .Main-section-five {
-        flex-direction:column;
+        flex-direction: column;
     }
 
-    .Cards-section-five {
+    .Cards-section-five,
+    .Cards-section-five-neo {
         width: 50%;
     }
 
-    .Cards-section-five:hover {
+    .Cards-section-five,
+    .Cards-section-five-neo:hover {
         transform: translateY(-31px);
         width: 100%;
     }
 
-    .Cards-section-five-content {
+    .Cards-section-five-content,
+    .Cards-section-five-content-neo {
         margin-bottom: 25%;
 
     }
@@ -744,13 +915,15 @@ main h4 {
         flex-direction: column;
     }
 
-    .Cards-section-five {
+    .Cards-section-five,
+    .Cards-section-five-neo {
         width: 70%;
     }
 
-    .Cards-section-five:hover {
+    .Cards-section-five:hover,
+    .Cards-section-five-neo:hover {
         width: 71%;
-    
+
     }
 
     .Cards-section-five-content {
