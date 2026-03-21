@@ -1,3 +1,4 @@
+/*Não irei comentar pois é um codigo pra portfolio Kkkkkkkkkkkkkkkkkkkkkkkk. "A mais pra codigo de portfolio tem que comentar" nao ligo nao fia*/
 * {
     margin: 0;
     padding: 0;
@@ -9,24 +10,23 @@
 }
 
 :root {
-    --Background-white-mode-white: #F5F5F7;
-    --Background-white-two-mode-white: #ededee;
-    --Background-white-three-mode-white: #f3f3f4;
-    --Background-white-for-mode-white: #eeeeee;
-    --Text-black-mode-white: black;
-    --Text-Grey: grey;
-    --Gray-two: #f0f0f0;
+    --primary-color: #F5F5F7;
+    --secondary-color: #ededee;
+    --third-color: #f3f3f4;
+    --fourth-color: #000000;
+    --fifth-color: grey;
+    --sixth-color: #f0f0f0;
 }
 
 body {
-    background-color: var(--Background-white-mode-white);
+    background-color: var(--primary-color);
     overflow-x: hidden;
 }
 
 header section {
     width: 100%;
     height: 10vh;
-    background-color: var(--Background-white-mode-white);
+    background-color: var(--primary-color);
     position: relative;
 
 
@@ -46,12 +46,12 @@ nav {
 }
 
 .Links h4 {
-    color: var(--Text-black-mode-white);
+    color: var(--fourth-color);
     position: relative;
     z-index: 2;
     width: fit-content;
     font-size: 13px;
-    transition: all 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .Logo,
@@ -66,13 +66,13 @@ nav {
 }
 
 .Links h4:hover {
-    border-bottom: 1px solid var(--Text-black-mode-white);
+    border-bottom: 1px solid var(--fourth-color);
 }
 
 .Texts-Div {
     display: flex;
     position: absolute;
-    background-color: var(--Background-white-mode-white);
+    background-color: var(--primary-color);
     width: 100%;
     height: 100vh;
     top: 0;
@@ -140,7 +140,7 @@ header:has(.Text-One:hover)~main section {
 
 main a {
     background-color: #0076DF;
-    color: var(--Background-white-mode-white);
+    color: var(--primary-color);
     border-radius: 30px;
     width: 130px;
     margin-top: 2%;
@@ -152,7 +152,7 @@ main a {
 
 main a:hover {
     font-size: 15px;
-    background-color: var(--Text-black-mode-white);
+    background-color: var(--fourth-color);
 }
 
 main h4 {
@@ -163,7 +163,7 @@ main h4 {
     width: 100%;
     min-height: 70vh;
     display: flex;
-    background-color: var(--Background-white-for-mode-white);
+    background-color: var(--secondary-color);
     align-items: flex-start;
     justify-content: flex-start;
     padding: 2rem;
@@ -241,7 +241,7 @@ main h4 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--Gray-two);
+    background-color: var(--sixth-color);
     border-radius: 30px;
     margin-top: 2rem;
 }
@@ -250,12 +250,12 @@ main h4 {
 .Circle-two,
 .Circle-three,
 .Circle-for {
-    width: 0.7rem;
+    width: 13px;
     height: 2vh;
     background-color: transparent;
-    border: 1px solid var(--Text-black-mode-white);
+    border: 1px solid var(--fourth-color);
     border-radius: 50%;
-    transition: all 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 .Circle-one:focus,
@@ -264,7 +264,7 @@ main h4 {
 .Circle-for:focus {
     width: 2rem;
     border-radius: 20px;
-    background-color: var(--Text-black-mode-white);
+    background-color: var(--fourth-color);
 }
 
 .Photo-main-section-three {
@@ -279,7 +279,7 @@ main h4 {
     opacity: 0;
     transform: translateY(40px) scale(0.98);
     filter: blur(4px);
-    transition: all 0.8s ease;
+    transition: 0.8s ease;
 }
 
 .reveal.active {
@@ -290,7 +290,7 @@ main h4 {
 
 .Main-section-for {
     display: flex;
-    background-color: var(--Background-white-mode-white);
+    background-color: var(--primary-color);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -308,7 +308,7 @@ main h4 {
     border: 1px solid #00000023;
     align-items: center;
     padding: 20px;
-    background-color: var(--Background-white-mode-white);
+    background-color: var(--primary-color);
     justify-content: space-around;
 }
 
@@ -365,7 +365,7 @@ main h4 {
 }
 
 .Main-text-completion-section-for span {
-    color: rgb(73, 73, 73);
+    color: #494949;
 }
 
 .Main-section-five {
@@ -379,7 +379,8 @@ main h4 {
 
 .Cards-section-five,
 .Cards-section-five-neo {
-    width: 35%;
+    width: 380px;
+    max-width: 360px;
     min-height: 80vh;
     display: flex;
     align-items: center;
@@ -391,7 +392,7 @@ main h4 {
 }
 
 .Cards-section-five:hover {
-    width: 37%;
+    transform: translateY(-3px);
 }
 
 .Photo-card-section-five,
@@ -409,7 +410,8 @@ main h4 {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-bottom: 25%;
+    margin-bottom: 20%;
+
     padding: 30px;
 }
 
@@ -455,7 +457,7 @@ main h4 {
 }
 
 .Main-section-six h4 span {
-    color: var(--Text-black-mode-white);
+    color: var(--fourth-color);
 }
 
 .Main-section-seven {
@@ -499,7 +501,7 @@ main h4 {
     flex-direction: column;
     text-align: center;
     gap: 15px;
-    background-color: var(--Background-white-mode-white);
+    background-color: var(--primary-color);
 }
 
 .Main-section-eight img {
@@ -524,7 +526,92 @@ main h4 {
 }
 
 .Main-section-eight h4 span {
-    color: var(--Text-black-mode-white);
+    color: var(--fourth-color);
+}
+
+.Main-section-nine {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--third-color);
+    flex-direction: column;
+    margin-top: 70px;
+
+}
+
+.Main-section-nine h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.Photos-section-nine {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.Photos-section-nine img {
+    width: 290px;
+    max-width: 360px;
+    height: auto;
+    box-shadow: 2px 2px 10px #0000002c;
+    border-radius: 30px;
+    transition: 0.6s ease-in-out;
+}
+
+.Photos-section-nine img:hover {
+    transform: scale(1.1);
+}
+
+.Main-section-ten {
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+    flex-direction: column;
+}
+
+.Main-section-ten img {
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    transition: 0.6s ease-in-out;
+}
+
+.Main-section-ten img:hover {
+    transform: translateY(17px);
+    border-radius: 10px;
+}
+
+.Photo-section-ten-mobile {
+    display: none;
+}
+
+footer section {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+footer section li {
+    font-size: 12px;
+    gap: 20px;
+}
+
+.List-footer {
+    display: flex;
+    gap: 30px;
+    color: var(--fifth-color);
+    flex-direction: column;
 }
 
 @media (max-width:768px) {
@@ -537,7 +624,8 @@ main h4 {
     }
 
     .Main-section-seven h1,
-    .Main-section-eight h1 {
+    .Main-section-eight h1,
+    .Main-section-nine h1 {
         font-size: 26px;
     }
 
@@ -584,7 +672,7 @@ main h4 {
         animation: Link-animation-mobile 0.5s ease-in-out forwards;
         width: 100%;
         gap: 30px;
-        background-color: var(--Background-white-three-mode-white);
+        background-color: var(--third-color);
         min-height: 150vh;
         text-align: flex-start;
         padding: 2rem;
@@ -608,6 +696,10 @@ main h4 {
         z-index: 5;
     }
 
+    .Texts_section-for {
+        width: 90%;
+    }
+
 }
 
 @media (max-width:426px) {
@@ -621,6 +713,12 @@ main h4 {
         display: none;
     }
 
+    .Photo-section-ten-mobile {
+        display: block;
+    }
+    .Photo-section-ten-desktop {
+        display: none;
+    }
     .Cards-section-five-content-neo {
         display: none;
     }
@@ -685,7 +783,7 @@ main h4 {
     }
 
     .square {
-        background-color: var(--Background-white-for-mode-white);
+        background-color: var(--primary-color);
         width: 30%;
     }
 
@@ -782,10 +880,7 @@ main h4 {
         width: 100%;
     }
 
-    .Cards-section-five:hover {
-        transform: translateY(-31px);
-        width: 100%;
-    }
+
 
     .Cards-section-five-content {
         margin-bottom: 50%;
@@ -886,74 +981,5 @@ main h4 {
 
     nav section {
         justify-content: space-between;
-    }
-}
-
-@media (min-width:427px) and (max-width:1023px) {
-    .Main-Title {
-        font-size: 2rem;
-        width: 50%;
-    }
-    .Main-section-one {
-        margin-top: 7%;
-    }
-    .Photos {
-        height: 460px;
-    }
-
-    .Main-title-section-three {
-        width: 80%;
-    }
-
-    .Text_section-for {
-        display: none;
-    }
-
-    .Text_section-for-mobile {
-        display: flex;
-    }
-
-    .Main-section-five {
-        flex-direction: column;
-    }
-
-    .Cards-section-five,
-    .Cards-section-five-neo {
-        width: 70%;
-    }
-
-    .Cards-section-five:hover,
-    .Cards-section-five-neo:hover {
-        width: 71%;
-
-    }
-
-    .Cards-section-five-content {
-        margin-bottom: 40%;
-    }
-
-    .Main-text-completion-section-for {
-        text-align: center;
-        margin-left: 0;
-    }
-
-    .Price-section-five {
-        width: 45%;
-        padding: 5px;
-        border-radius: 20px;
-        color: black !important;
-        background-color: #c3ffc7;
-        text-align: center;
-    }
-
-    .void-mobile {
-        display: flex;
-        width: 100%;
-        background-color: red;
-    }
-
-    .Texts-Div {
-        margin-left: -5%;
-        margin-top: 20%;
     }
 }
