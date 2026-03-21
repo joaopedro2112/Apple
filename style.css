@@ -894,7 +894,9 @@ main h4 {
         font-size: 2rem;
         width: 50%;
     }
-
+    .Main-section-one {
+        margin-top: 7%;
+    }
     .Photos {
         height: 460px;
     }
@@ -927,7 +929,7 @@ main h4 {
     }
 
     .Cards-section-five-content {
-        margin-bottom: 50%;
+        margin-bottom: 40%;
     }
 
     .Main-text-completion-section-for {
