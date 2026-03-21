@@ -618,7 +618,10 @@ footer section li {
     .Icon-Menu {
         display: flex;
     }
-
+    .Main-Title,
+    .Main-section-three h1 {
+        width: 80%;
+    }
     header:has(.Icon-Menu:hover)~main section {
         filter: blur(10px);
     }
@@ -716,9 +719,11 @@ footer section li {
     .Photo-section-ten-mobile {
         display: block;
     }
+
     .Photo-section-ten-desktop {
         display: none;
     }
+
     .Cards-section-five-content-neo {
         display: none;
     }
@@ -906,6 +911,13 @@ footer section li {
         font-size: 2rem;
     }
 
+    .Circle-for,
+    .Circle-one,
+    .Circle-two,
+    .Circle-three {
+        height: 4vh;
+    }
+
     .Cards-section-five,
     .Cards-section-five-neo {
 
@@ -982,4 +994,28 @@ footer section li {
     nav section {
         justify-content: space-between;
     }
+
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .Main-section-one {
+        margin-top: 10%;
+    }
+
+    .Main-Title {
+        width: 70%;
+    }
+
+    .Texts-Div {
+        height: 300vh;
+
+    }
+
+    .Circle-for,
+    .Circle-one,
+    .Circle-two,
+    .Circle-three {
+        height: 4vh;
+    }
+    
 }
