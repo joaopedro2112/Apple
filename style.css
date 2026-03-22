@@ -72,9 +72,10 @@ nav {
 .Texts-Div {
     display: flex;
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: var(--sixth-color);
     width: 100%;
-    min-height: 350vh;
+    
+    min-height: 300vh;
     top: 0;
     margin-top: 5%;
     left: 0;
@@ -377,8 +378,7 @@ main h4 {
     margin-top: 5%;
 }
 
-.Cards-section-five,
-.Cards-section-five-neo {
+.Cards-section-five{
     width: 380px;
     max-width: 360px;
     min-height: 80vh;
@@ -388,15 +388,11 @@ main h4 {
     justify-content: center;
     cursor: pointer;
     border-radius: 20px;
-    transition: 0.5s ease-in-out;
+   
 }
 
-.Cards-section-five:hover {
-    transform: translateY(-3px);
-}
 
-.Photo-card-section-five,
-.Photo-card-section-five-neo {
+.Photo-card-section-five {
     width: 100%;
     border-radius: 30px;
     mix-blend-mode: multiply;
@@ -404,8 +400,7 @@ main h4 {
     box-shadow: 4px 4px 15px #00000055;
 }
 
-.Cards-section-five-content,
-.Cards-section-five-content-neo {
+.Cards-section-five-content {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -1017,4 +1012,29 @@ footer section li {
         height: 4vh;
     }
     
+}
+@media (min-width:768px) and (max-width:1114px) {
+    .Main-section-one {
+        margin-top: 6%;
+    }
+    .Main-section-two {
+        margin-top: 20%;
+    }
+    .Circle-for,
+    .Circle-one,
+    .Circle-three,
+    .Circle-two {
+        height: 2.5vh;
+    }
+    .Main-section-five {
+        gap: 1px;
+        flex-wrap: nowrap
+    }
+    .Cards-section-five {
+        width: 85%;
+    }
+    .Cards-section-five-content {
+        margin-bottom: 11%;
+        text-align: center;
+    }
 }
